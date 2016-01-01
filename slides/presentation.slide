@@ -1,0 +1,132 @@
+Introduction to Go
+Sometimes called golang
+17 Dec 2015
+Tags: go golang presentation present
+
+Paul Fortin
+URBN Platform Architect and Go Hobbyist
+pfortin@urbn.com
+http://urbanoutfitters.com
+twitter - @MeditationStash
+
+
+
+
+
+* Who is this guy?
+.image ./paul.jpg 200 200
+
+- Programming addict
+- C, Java, Python, and *GO*
+- docker contributor
+- Platform Architect, urbanoutfitters.com
+.link http://www.urbanoutfitters.com
+
+
+
+
+* What will we talk about?
+
+- Why GO?
+- The language overview
+- A small WebServer in Go (with templates)
+- A bare bones API
+- The URBN Inventory importer (InventoryProcessor)
+
+
+
+
+
+* Why GO? (Page 1)
+
+“Go will be the server language of the future.” - Tobias Lütke, Shopify
+
+Here are a few points of interest...
+
+- Async
+The Go runtime ensures that any one goroutine isn’t blocking the others. Code is written in a synchronous style while being fully non-blocking. There is no need for callbacks, so there is no “callback hell.”
+
+- Multicore
+Go multiplexes goroutines onto OS threads (like Erlang), and stacks grow as needed. Go not only addresses the C10K problem, it blows past it! (C1000K)
+
+
+
+
+
+* Why GO (Page 2)
+- Concurrency
+Go channels provide a concurrency primitive comparable to the actors model. With actors we name the endpoints (mailboxes), whereas channels are the conduit.  Want to pass a channel over a channel? Go for it!
+
+- Static Binaries
+Go applications compile quickly and launch immediately.
+
+* The language overview
+
+This is going to be a very brief tour of the language but if you want a bit more you can go to [A Tour of Go](https://tour.golang.org/)
+where you will find a great intor to the language that can be done betwen 2 and 4 hours).  If you are still interested there are now
+several books written on go and also many more tutorials online about a very comprehensive list of subjects that you might want to
+play with.
+
+- Installation / Path / IDEs
+- Variables
+- Functions (Multi returns / Named returns)
+- Arrays, Slices, Structs and Maps
+- Concurrency
+- But what about OO?
+
+* The language overview (Installation)
+
+There are 2 common ways to install Go on your computer:
+
+- An installer for your system (Windows, Linux, Mac (Homebrew)), or;
+- GVM (Linux / Mac only)
+
+I recommend GVM as it gives you the most flexibility to switch from one version to another easily.  The instructions are simple and you can go thru it on your own.
+
+.link https://golang.org/doc/install
+.link https://github.com/moovweb/gvm
+
+* The language overview (Path)
+
+There are 2 very important environment variables that GO uses:
+
+- GOROOT - Where the GO tools are installed on your system (in the case of GVM this is set for you)
+- GOPATH - Where GO will download and install libraries that you want to use in your applications
+.link https://github.com/avelino/awesome-go
+
+Additionally there are 2 more that are important for cross compiling
+
+- GOOS   - compiler/linker target OS
+- GOARCH - compiler/linker target architecture
+GOOS=linux GOARCH=386 go build -o hello hello.go  (compiles for the linux/386 architecture)
+
+
+* The language overview (IDEs)
+
+There is a vast array of choices from Text Editors to an Eclipse plugin for GO.  I will be using Webstorm from JetBrains
+as I have found that it has a lot of nice built-in functions plus I can use all the frontend tools I want with it.
+
+
+* The language overview (Hello World)
+.play hello.go
+
+
+
+* The language overview (Variables)
+.play vars.go
+
+
+
+* The language overview (Functions - 1)
+.play functions_1.go
+
+
+
+* The language overview (Functions - 2)
+.play functions_2.go
+
+
+
+* Interesting Links
+- https://play.golang.org/
+- https://github.com/SimonWaldherr/golang-examples
