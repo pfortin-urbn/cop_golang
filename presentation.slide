@@ -88,17 +88,20 @@ I recommend GVM as it gives you the most flexibility to switch from one version 
 
 * The language overview (Path)
 
-There are 2 very important environment variables that GO uses:
+- There are 2 very important environment variables that GO uses:
+  - GOROOT - Where the GO tools are installed on your system (GVM sets this)
+  - GOPATH - Where GO will download and install libraries
 
-- GOROOT - Where the GO tools are installed on your system (in the case of GVM this is set for you)
-- GOPATH - Where GO will download and install libraries that you want to use in your applications
-.link https://github.com/avelino/awesome-go
+- Some Libraries: [[https://github.com/avelino/awesome-go][https://github.com/avelino/awesome-go]]
 
-Additionally there are 2 more that are important for cross compiling
 
-- GOOS   - compiler/linker target OS
-- GOARCH - compiler/linker target architecture
-GOOS=linux GOARCH=386 go build -o hello hello.go  (compiles for the linux/386 architecture)
+- Additionally there are 2 more that are important for cross compiling
+
+ - GOOS   - compiler/linker target OS
+ - GOARCH - compiler/linker target architecture
+
+ example: GOOS=linux GOARCH=386 go build -o hello hello.go
+     (compiles for the linux/386 architecture)
 
 
 * The language overview (IDEs)
@@ -126,7 +129,29 @@ as I have found that it has a lot of nice built-in functions plus I can use all 
 .play functions_2.go
 
 
+* The language overview (Arrays)
+.play arrays.go
+
+
+* The language overview (Slices)
+.play slices.go
+
+
+* The language overview (Structs)
+.play structs.go
+
+
+* The language overview (Maps)
+.play maps.go
+
+
+* The language overview (Concurrency)
+
+
+* The language overview (But What about OO)
+
 
 * Interesting Links
+- http://go-talks.appspot.com/github.com/pfortin-urbn/cop_golang/slides/presentation.slide (This presentation)
 - https://play.golang.org/
 - https://github.com/SimonWaldherr/golang-examples
