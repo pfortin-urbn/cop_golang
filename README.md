@@ -1,5 +1,5 @@
 
-# Talk on Golang presented to Community of Practise Urban Outfitters Jan 2016
+# Talk on Golang presented to Community of Practice Urban Outfitters Jan 2016
 
 * The Language Overview
 * A small Webserver in golang
