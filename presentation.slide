@@ -4,7 +4,7 @@ Sometimes called golang
 Tags: go golang presentation present
 
 Paul Fortin
-URBN Platform Architect and Go Hobbyist
+Hobbyist Gopher
 pfortin@urbn.com
 http://urbanoutfitters.com
 twitter - @MeditationStash
@@ -62,10 +62,7 @@ Go applications compile quickly and launch immediately.
 
 * The language overview
 
-This is going to be a very brief tour of the language but if you want a bit more you can go to [A Tour of Go](https://tour.golang.org/)
-where you will find a great intor to the language that can be done betwen 2 and 4 hours).  If you are still interested there are now
-several books written on go and also many more tutorials online about a very comprehensive list of subjects that you might want to
-play with.
+This is going to be a very brief tour of the language but if you want a bit more you can take [[https://tour.golang.org/][A Tour of Go]] where you will find a great intro to the language that can be done betwen 2 and 4 hours).  If you are still interested there are now several books written on go and also many more tutorials online about a very comprehensive list of subjects that you might want to play with.
 
 - Installation / Path / IDEs
 - Variables
@@ -146,9 +143,17 @@ as I have found that it has a lot of nice built-in functions plus I can use all 
 
 
 * The language overview (Concurrency)
+.play concurrency.go
+
+
+* The language overview (Channels)
+.play channels.go
 
 
 * The language overview (But What about OO)
+.play WhatAboutOO.go
+
+* Lets write a full blow webserver in Go in 5 to 10 mins
 
 
 * Interesting Links
