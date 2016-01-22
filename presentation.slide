@@ -1,6 +1,6 @@
 Introduction to Go
 Sometimes called golang
-17 Dec 2015
+22 Jan 2016
 Tags: go golang presentation present
 
 Paul Fortin
@@ -19,8 +19,8 @@ twitter - @MeditationStash
 - Programming addict
 - C, Java, Python, and *GO*
 - docker contributor
-- Platform Architect, urbanoutfitters.com
-.link http://www.urbanoutfitters.com
+- Developer, urbanoutfitters.com
+
 
 
 
@@ -89,7 +89,7 @@ I recommend GVM as it gives you the most flexibility to switch from one version 
   - GOROOT - Where the GO tools are installed on your system (GVM sets this)
   - GOPATH - Where GO will download and install libraries
 
-- Some Libraries: [[https://github.com/avelino/awesome-go][https://github.com/avelino/awesome-go]]
+- Some Libraries: [[https://github.com/avelino/awesome-go]]
 
 
 - Additionally there are 2 more that are important for cross compiling
@@ -103,8 +103,7 @@ I recommend GVM as it gives you the most flexibility to switch from one version 
 
 * The language overview (IDEs)
 
-There is a vast array of choices from Text Editors to an Eclipse plugin for GO.  I will be using Webstorm from JetBrains
-as I have found that it has a lot of nice built-in functions plus I can use all the frontend tools I want with it.
+There is a vast array of choices from Text Editors to an Eclipse plugin for GO.  I will be using WebStorm from JetBrains as I have found that it has a lot of nice built-in functions plus I can use all the frontend tools I want with it.
 
 
 * The language overview (Hello World)
@@ -155,6 +154,10 @@ as I have found that it has a lot of nice built-in functions plus I can use all 
 
 * Lets write a full blow webserver in Go in 5 to 10 mins
 
+
+* Let's write a barebones Profile API
+
+* The InventoryProcessor
 
 * Interesting Links
 - http://go-talks.appspot.com/github.com/pfortin-urbn/cop_golang/slides/presentation.slide (This presentation)

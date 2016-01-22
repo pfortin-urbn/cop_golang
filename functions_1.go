@@ -7,7 +7,7 @@ var lastname string
 func main() {
 	newname, err := makeName("Smith")
 	if err != nil {
-		fmt.Printf("Bad last name: %s\n", "Smith")
+		fmt.Printf("%s\n", err)
 		return
 	}
 	fmt.Printf("Hello, %s\n", newname)
